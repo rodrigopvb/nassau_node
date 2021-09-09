@@ -12,19 +12,19 @@ import { AppService } from '../services/app.service';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) { }
+  constructor(private readonly appService: AppService) {}
 
   @Get()
   async getAllUsers(): Promise<User> {
     return await this.appService.getAllUsers();
   }
 
-  @Get('/{id}')
+  @Get(':id')
   async getUserById(@Param('id') id: number): Promise<User> {
     return await this.appService.getUserById(id);
   }
 
-  @Get('/{name}')
+  @Get('byname/:name')
   async getUserByName(@Param('name') name: string): Promise<User> {
     return await this.appService.getUserByName(name);
   }

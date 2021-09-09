@@ -12,7 +12,7 @@ export default class User extends Model<User> {
   public id!: number;
 
   @Column
-  public valid = true;
+  public valid!: boolean;
 
   @Column
   public name!: string;

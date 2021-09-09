@@ -1,0 +1,10 @@
+{
+    "development": {
+        "username": "root",
+        "password": "nassau123",
+        "database": "nassaudb",
+        "host": "nassaudb.ctlgddya9g0p.sa-east-1.rds.amazonaws.com",
+        "dialect": "mysql"
+    },
+    "port": 3306
+}
